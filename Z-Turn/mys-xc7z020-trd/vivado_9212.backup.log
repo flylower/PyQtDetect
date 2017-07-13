@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jul 10 15:16:47 2017
+# Process ID: 9212
+# Current directory: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4712 C:\Users\dell\Desktop\mys-xc7z020-trd.xpr\mys-xc7z020-trd\mys-xc7z020-trd.xpr
+# Log file: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/vivado.log
+# Journal file: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ipdefs/ip_repo_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Program/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 878.086 ; gain = 230.648
+launch_sdk -workspace C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk -hwspec C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk -hwspec C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:user:TLC1543:1.0 - TLC1543_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 992.988 ; gain = 112.125
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.0 xfft_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.input_width.VALUE_SRC USER] [get_bd_cells xfft_0]
+set_property -dict [list CONFIG.transform_length {512} CONFIG.implementation_options {radix_2_burst_io} CONFIG.input_width {10} CONFIG.phase_factor_width {10} CONFIG.rounding_modes {convergent_rounding} CONFIG.throttle_scheme {realtime} CONFIG.output_ordering {bit_reversed_order} CONFIG.implementation_options {radix_2_burst_io} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_bd_cells xfft_0]
+endgroup
+set_property location {0.5 -239 1013} [get_bd_cells xfft_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 10 17:26:25 2017...

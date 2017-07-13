@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jul 12 06:57:48 2017
+# Process ID: 7424
+# Current directory: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4852 C:\Users\dell\Desktop\mys-xc7z020-trd.xpr\mys-xc7z020-trd\mys-xc7z020-trd.xpr
+# Log file: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/vivado.log
+# Journal file: C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.xpr
+ipx::edit_ip_in_project -upgrade true -name TLC1543_v1_0_v1_0_project -directory C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.tmp/TLC1543_v1_0_v1_0_project c:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ipdefs/ip_repo_0/TLC1543_1.0/component.xml
+set_property core_revision 11 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ipdefs/ip_repo_0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:TLC1543:1.0 [get_ips  design_1_TLC1543_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_TLC1543_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files -ipstatic_source_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/modelsim} {questa=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/questa} {riviera=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/riviera} {activehdl=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1/design_1_wrapper.sysdef C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk -hwspec C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk -hwspec C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets xlconcat_0_dout]
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res] [get_bd_nets util_vector_logic_1_Res] [get_bd_cells xlconcat_0]
+delete_bd_objs [get_bd_nets Op1_2] [get_bd_cells util_vector_logic_1]
+delete_bd_objs [get_bd_nets Op1_1] [get_bd_cells util_vector_logic_0]
+delete_bd_objs [get_bd_ports hdmi_intn]
+delete_bd_objs [get_bd_ports mems_intn]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells ila_0]
+delete_bd_objs [get_bd_nets xlconcat_1_dout]
+delete_bd_objs [get_bd_nets TLC1543_0_data]
+connect_bd_net [get_bd_pins TLC1543_0/data] [get_bd_pins blk_mem_gen_0/dinb]
+delete_bd_objs [get_bd_nets TLC1543_0_RAM_ADDR]
+delete_bd_objs [get_bd_nets xlconstant_0_dout]
+startgroup
+set_property -dict [list CONFIG.IN0_WIDTH {2} CONFIG.IN1_WIDTH {29}] [get_bd_cells xlconcat_1]
+endgroup
+set_property -dict [list CONFIG.IN1_WIDTH {30}] [get_bd_cells xlconcat_1]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins xlconcat_1/In0]
+connect_bd_net [get_bd_pins TLC1543_0/RAM_ADDR] [get_bd_pins xlconcat_1/In1]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins xlconcat_1/dout]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+generate_target all [get_files  C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files -ipstatic_source_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/modelsim} {questa=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/questa} {riviera=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/riviera} {activehdl=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property location {4.5 1514 614} [get_bd_cells blk_mem_gen_0]
+set_property location {3.5 1315 700} [get_bd_cells xlconstant_1]
+set_property location {3.5 1224 692} [get_bd_cells xlconstant_1]
+set_property location {4.5 1375 659} [get_bd_cells xlconstant_2]
+set_property location {4.5 1320 642} [get_bd_cells xlconstant_2]
+regenerate_bd_layout
+validate_bd_design -force
+save_bd_design
+make_wrapper -files [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+generate_target all [get_files  C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files -ipstatic_source_dir C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/modelsim} {questa=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/questa} {riviera=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/riviera} {activehdl=C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.runs/impl_1/design_1_wrapper.sysdef C:/Users/dell/Desktop/mys-xc7z020-trd.xpr/mys-xc7z020-trd/mys-xc7z020-trd.sdk/design_1_wrapper.hdf
+

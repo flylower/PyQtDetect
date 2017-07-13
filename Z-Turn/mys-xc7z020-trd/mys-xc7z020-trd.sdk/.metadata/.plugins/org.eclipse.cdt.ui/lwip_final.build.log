@@ -1,0 +1,13 @@
+10:48:32 **** Auto Build of configuration Debug for project lwip_final ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lwip_final_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:35:20: fatal error: xil_io.h: No such file or directory
+compilation terminated.
+make: *** [src/echo.o] ´íÎó 1
+
+10:48:33 Build Finished (took 508ms)
+

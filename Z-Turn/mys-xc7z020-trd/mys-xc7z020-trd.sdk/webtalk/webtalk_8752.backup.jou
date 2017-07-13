@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 17:18:21 MST 2014
+# 
+# Start of session at: Tue Jun 06 17:38:00 2017
+# Process ID: 8752
+# Log file: C:/Users/tw/Desktop/z-turn-lwip/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/tw/Desktop/z-turn-lwip/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd/mys-xc7z020-trd.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
