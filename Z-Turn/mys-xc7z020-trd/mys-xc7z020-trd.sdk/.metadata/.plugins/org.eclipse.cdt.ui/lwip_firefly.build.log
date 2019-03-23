@@ -1,8 +1,0 @@
-08:09:29 **** Incremental Build of configuration Debug for project lwip_firefly ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-
-08:09:29 Build Finished (took 216ms)
-
