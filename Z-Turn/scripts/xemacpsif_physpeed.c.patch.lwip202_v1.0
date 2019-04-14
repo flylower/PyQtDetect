@@ -88,10 +88,10 @@
 +	}
 +	xil_printf("autonegotiation complete \r\n");
 +
-+	XEmacPs_PhyRead（xemacpsp，phy_addr，0x1F，＆status_speed）上使用// hack for Micrel KSZ9031RNX ; 
-+	if (!(status_speed & 0x01)) {  //link on 原来0x400,第10 位
++	XEmacPs_PhyRead(xemacpsp, phy_addr, 0x1F, &status_speed); // hack for Micrel KSZ9031RNX ;
++	if (!(status_speed & 0x01)) {  //Link on original 0x400, 10th place
 +        xil_printf("PHY Link stutus:not failing \r\n");
-+        temp_speed = status_speed & 0x70; // 读取最高两位速度  [6:4]status_speed & IEEE_SPEED_MASK
++        temp_speed = status_speed & 0x70; // Read the highest two-speed [6:4]status_speed & IEEE_SPEED_MASK
 +
 +        if (temp_speed == 0x40)//IEEE_SPEED_1000
 +            return 1000;

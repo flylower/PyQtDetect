@@ -1,0 +1,2 @@
+Init:
+1.Fixed patch Text's Chinese encode error
